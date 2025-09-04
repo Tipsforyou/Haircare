@@ -1,10 +1,8 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', Arial, sans-serif;
-  background: linear-gradient(135deg, #8cdcff 0%, #f9a8c4 100%);
+  background: linear-gradient(120deg, #e3f1ff 0%, #ffffff 100%);
   min-height: 100vh;
-  position: relative;
-  overflow-x: hidden;
 }
 
 .background {
@@ -16,82 +14,121 @@ body {
   left: 0;
 }
 
+/* Nuages SVG */
 .cloud, .flower {
   position: absolute;
-  opacity: 0.7;
+  opacity: 0.35;
+  pointer-events:none;
 }
-.cloud1 { top: 7%; left: 10%; width: 130px; height: 60px; background: url('data:image/svg+xml;utf8,<svg width="130" height="60" xmlns="http://www.w3.org/2000/svg"><ellipse cx="65" cy="30" rx="55" ry="25" fill="%23b3e2fa"/><ellipse cx="100" cy="30" rx="20" ry="15" fill="%23ccefff"/><ellipse cx="35" cy="30" rx="30" ry="20" fill="white"/></svg>'); background-repeat: no-repeat; }
-.cloud2 { top: 20%; right: 11%; width: 110px; height: 50px; background: url('data:image/svg+xml;utf8,<svg width="110" height="50" xmlns="http://www.w3.org/2000/svg"><ellipse cx="55" cy="25" rx="45" ry="18" fill="%238cdcff"/><ellipse cx="85" cy="25" rx="15" ry="10" fill="white"/><ellipse cx="28" cy="25" rx="22" ry="14" fill="%23ccefff"/></svg>'); background-repeat: no-repeat; }
-.cloud3 { bottom: 10%; left: 18%; width: 80px; height: 40px; background: url('data:image/svg+xml;utf8,<svg width="80" height="40" xmlns="http://www.w3.org/2000/svg"><ellipse cx="40" cy="20" rx="32" ry="14" fill="%238cdcff"/><ellipse cx="62" cy="20" rx="12" ry="8" fill="%23b3e2fa"/><ellipse cx="18" cy="20" rx="14" ry="8" fill="white"/></svg>'); background-repeat: no-repeat; }
+.cloud1 {
+  top: 8%;
+  left: 7%;
+  width: 140px;
+  height: 70px;
+  background: url('data:image/svg+xml;utf8,<svg width="140" height="70" xmlns="http://www.w3.org/2000/svg"><ellipse cx="70" cy="35" rx="60" ry="28" fill="%23cbe7ff"/><ellipse cx="110" cy="35" rx="22" ry="15" fill="white"/><ellipse cx="40" cy="35" rx="30" ry="20" fill="white"/></svg>');
+  background-repeat: no-repeat;
+}
+.cloud2 {
+  top: 65%;
+  right: 12%;
+  width: 120px;
+  height: 60px;
+  background: url('data:image/svg+xml;utf8,<svg width="120" height="60" xmlns="http://www.w3.org/2000/svg"><ellipse cx="60" cy="30" rx="50" ry="22" fill="%23b7d6ea"/><ellipse cx="90" cy="30" rx="18" ry="12" fill="white"/><ellipse cx="30" cy="30" rx="24" ry="10" fill="white"/></svg>');
+  background-repeat: no-repeat;
+}
 
-.flower1 { bottom: 8%; left: 10%; width: 60px; height: 60px; background: url('data:image/svg+xml;utf8,<svg width="60" height="60" xmlns="http://www.w3.org/2000/svg"><circle cx="30" cy="30" r="16" fill="%23e45a84"/><circle cx="12" cy="30" r="8" fill="%23a8e063"/><circle cx="48" cy="30" r="8" fill="%23a8e063"/><circle cx="30" cy="12" r="8" fill="%23f9a8c4"/><circle cx="30" cy="48" r="8" fill="%23f9a8c4"/><circle cx="30" cy="30" r="6" fill="white"/></svg>'); background-repeat: no-repeat; }
-.flower2 { top: 18%; right: 7%; width: 45px; height: 45px; background: url('data:image/svg+xml;utf8,<svg width="45" height="45" xmlns="http://www.w3.org/2000/svg"><circle cx="22" cy="22" r="12" fill="%23ff5a5f"/><circle cx="6" cy="22" r="6" fill="%23a8e063"/><circle cx="38" cy="22" r="6" fill="%23a8e063"/><circle cx="22" cy="6" r="6" fill="%23f9a8c4"/><circle cx="22" cy="38" r="6" fill="%23f9a8c4"/><circle cx="22" cy="22" r="4" fill="white"/></svg>'); background-repeat: no-repeat; }
-.flower3 { bottom: 15%; right: 22%; width: 55px; height: 55px; background: url('data:image/svg+xml;utf8,<svg width="55" height="55" xmlns="http://www.w3.org/2000/svg"><circle cx="27" cy="27" r="14" fill="%23f9a8c4"/><circle cx="8" cy="27" r="7" fill="%23a8e063"/><circle cx="46" cy="27" r="7" fill="%23a8e063"/><circle cx="27" cy="8" r="7" fill="%23e45a84"/><circle cx="27" cy="46" r="7" fill="%23e45a84"/><circle cx="27" cy="27" r="5" fill="white"/></svg>'); background-repeat: no-repeat; }
+/* Fleurs SVG printanières */
+.flower1 {
+  bottom: 6%;
+  left: 10%;
+  width: 50px;
+  height: 50px;
+  background: url('data:image/svg+xml;utf8,<svg width="50" height="50" xmlns="http://www.w3.org/2000/svg"><circle cx="25" cy="25" r="13" fill="%23e1f7e7"/><circle cx="10" cy="25" r="6" fill="%23f9a8c4"/><circle cx="40" cy="25" r="6" fill="%23a8e063"/><circle cx="25" cy="10" r="6" fill="%23f9a8c4"/><circle cx="25" cy="40" r="6" fill="%23a8e063"/><circle cx="25" cy="25" r="4" fill="white"/></svg>');
+  background-repeat: no-repeat;
+}
+.flower2 {
+  top: 23%;
+  right: 7%;
+  width: 38px;
+  height: 38px;
+  background: url('data:image/svg+xml;utf8,<svg width="38" height="38" xmlns="http://www.w3.org/2000/svg"><circle cx="19" cy="19" r="10" fill="%23f9a8c4"/><circle cx="6" cy="19" r="4" fill="%23a8e063"/><circle cx="32" cy="19" r="4" fill="%23a8e063"/><circle cx="19" cy="6" r="4" fill="%23e45a84"/><circle cx="19" cy="32" r="4" fill="%23e45a84"/><circle cx="19" cy="19" r="2" fill="white"/></svg>');
+  background-repeat: no-repeat;
+}
+.flower3 {
+  bottom: 18%;
+  right: 24%;
+  width: 35px;
+  height: 35px;
+  background: url('data:image/svg+xml;utf8,<svg width="35" height="35" xmlns="http://www.w3.org/2000/svg"><circle cx="17" cy="17" r="8" fill="%23a8e063"/><circle cx="4" cy="17" r="3" fill="%23f9a8c4"/><circle cx="30" cy="17" r="3" fill="%23e45a84"/><circle cx="17" cy="4" r="3" fill="%23f9a8c4"/><circle cx="17" cy="30" r="3" fill="%23e45a84"/><circle cx="17" cy="17" r="2" fill="white"/></svg>');
+  background-repeat: no-repeat;
+}
 
 header {
   text-align: center;
-  padding: 2rem 0 1rem 0;
-}
-.main-title {
-  font-size: 2.7rem;
-  color: #e45a84;
-  margin-bottom: 1.3rem;
-  font-family: 'Segoe UI', Arial, sans-serif;
-  text-shadow: 2px 2px 10px #fff9;
-  letter-spacing: 1.5px;
+  padding: 2.5rem 0 1.2rem 0;
+  background: rgba(255,255,255,0.85);
+  box-shadow: 0 2px 8px rgba(140,220,255,0.09);
+  border-bottom: 2px solid #cbe7ff;
 }
 
-.menu {
+.main-title {
+  font-size: 2.4rem;
+  color: #2176ae;
+  margin-bottom: 0.5rem;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  letter-spacing: 0.02em;
+}
+
+nav ul {
   list-style: none;
-  padding: 0;
   display: flex;
   justify-content: center;
   gap: 2.5rem;
-  margin-bottom: 0.7rem;
+  padding: 0;
+  margin: 0;
 }
-.menu li { display: inline; }
+
+nav ul li {
+  display: inline;
+}
 
 .headline {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-decoration: none;
   font-weight: bold;
-  padding: 0.7rem 2.2rem;
-  border-radius: 2.5rem;
-  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
-  box-shadow: 0 4px 18px rgba(228,90,132,0.09), 0 2px 6px rgba(140,220,255,0.10);
-  border: 2px solid transparent;
-  letter-spacing: 1px;
+  padding: 0.5rem 1.5rem;
+  border-radius: 2rem;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 2px 8px rgba(140,220,255,0.09);
+  background: #e3f1ff;
+  color: #2176ae;
+  border: 2px solid #cbe7ff;
 }
-.headline.blog     { background: linear-gradient(90deg, #8cdcff 60%, #e45a84 100%); color: #1e3a8a; }
-.headline.blog:hover { background: #1e3a8a; color: #fff; border-color: #8cdcff; }
-.headline.service  { background: linear-gradient(90deg, #a8e063 60%, #f9a8c4 100%); color: #226d2f; }
-.headline.service:hover { background: #226d2f; color: #fff; border-color: #a8e063; }
-.headline.news     { background: linear-gradient(90deg, #f9a8c4 60%, #8cdcff 100%); color: #8e133c; }
-.headline.news:hover { background: #8e133c; color: #fff; border-color: #f9a8c4; }
-.headline.politique { background: linear-gradient(90deg, #e45a84 60%, #a8e063 100%); color: #fff; }
-.headline.politique:hover { background: #fff; color: #e45a84; border-color: #e45a84; }
+.headline:hover {
+  background: #2176ae;
+  color: #fff;
+  border-color: #2176ae;
+}
 
 .haircare-article {
-  max-width: 1100px;
+  max-width: 900px;
   margin: 3rem auto 2rem auto;
   padding: 2.5rem 2rem;
-  background: linear-gradient(120deg, #f9a8c4 0%, #b3e2fa 100%);
-  box-shadow: 0 6px 32px rgba(140,220,255,0.13);
+  background: rgba(255,255,255,0.88);
+  box-shadow: 0 6px 32px rgba(140,220,255,0.09);
   border-radius: 2rem;
-  border: 4px solid #a8e063;
   position: relative;
   overflow: hidden;
+  border: 2px solid #cbe7ff;
   z-index: 2;
 }
-
 .haircare-title {
   text-align: center;
-  font-size: 2.2rem;
-  color: #e45a84;
-  margin-bottom: 2.5rem;
+  font-size: 2rem;
+  color: #2176ae;
+  margin-bottom: 2rem;
   font-family: 'Segoe UI', Arial, sans-serif;
-  letter-spacing: 1px;
-  text-shadow: 1px 1px 7px #fff4;
+  letter-spacing: 0.01em;
 }
 
 .haircare-content {
@@ -103,86 +140,69 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 2.7rem 0;
+  margin: 2.5rem 0;
   padding: 2rem 1.5rem;
   border-radius: 1.5rem;
-  background: linear-gradient(90deg, #e45a84 0%, #f9a8c4 26%, #b3e2fa 100%);
-  box-shadow: 0 4px 24px rgba(140,220,255,0.18);
+  background: linear-gradient(90deg, #e3f1ff 0%, #ffffff 100%);
+  box-shadow: 0 4px 24px rgba(140,220,255,0.08);
   position: relative;
-  width: 97%;
-  border: 2px solid #8cdcff;
+  width: 98%;
 }
 
 .haircare-compartment.left .haircare-text { order: 1; }
-.haircare-compartment.left .haircare-image { order: 2; padding-left: 2.5rem;}
-.haircare-compartment.right .haircare-image { order: 1; padding-right: 2.5rem;}
+.haircare-compartment.left .haircare-image { order: 2; padding-left: 3rem;}
+.haircare-compartment.right .haircare-image { order: 1; padding-right: 3rem;}
 .haircare-compartment.right .haircare-text { order: 2; }
 
 .haircare-text {
-  flex: 1 1 55%;
-  color: #1e3a8a;
-  font-size: 1.18rem;
+  flex: 1 1 50%;
+  color: #2176ae;
+  font-size: 1.13rem;
   padding: 0.5rem 0;
-  font-family: 'Segoe UI', Arial, sans-serif;
 }
 
-.haircare-text h3 {
-  color: #a8e063;
-  margin-top: 0.5rem;
-  font-size: 1.25rem;
-  font-family: 'Segoe UI', Arial, sans-serif;
-  text-shadow: 1px 1px 7px #fff4;
-}
-.haircare-text ul {
-  margin-left: 1.5rem;
-  margin-bottom: 1rem;
-}
+.haircare-text h3 { color: #3ecb5b; margin-top: 0.5rem; font-size: 1.2rem; }
+.haircare-text ul { margin-left: 1.5rem; margin-bottom: 1rem; }
 
 .haircare-image {
-  flex: 1 1 38%;
+  flex: 1 1 40%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .boucle-photo {
-  max-width: 250px;
-  max-height: 250px;
-  min-width: 140px;
-  border-radius: 40px;
-  box-shadow: 0 2px 24px rgba(228,90,132,0.15), 0 2px 10px rgba(140,220,255,0.13);
-  border: 7px solid #a8e063;
+  max-width: 210px;
+  max-height: 210px;
+  border-radius: 25px;
+  box-shadow: 0 2px 16px rgba(33,118,174,0.12);
+  border: 4px solid #cbe7ff;
   transition: transform 0.3s, box-shadow 0.3s;
-  background: #fff;
+  background: white;
 }
 .boucle-photo:hover {
-  transform: scale(1.07) rotate(-2deg);
-  box-shadow: 0 8px 28px rgba(140,220,255,0.29);
+  transform: scale(1.05) rotate(-1deg);
+  box-shadow: 0 6px 18px rgba(140,220,255,0.16);
 }
 
 footer {
   text-align: center;
-  padding: 2rem 0 1rem 0;
-  color: #e45a84;
-  background: rgba(140,220,255,0.21);
-  border-top: 2px solid #8cdcff;
+  padding: 1.5rem 0 0.5rem 0;
+  color: #2176ae;
+  background: rgba(227,241,255,0.4);
+  border-top: 2px solid #cbe7ff;
   margin-top: 2rem;
-  font-size: 1.1rem;
-  letter-spacing: 1px;
 }
 
-@media (max-width: 1100px) {
-  .haircare-article { max-width: 98vw; }
-  .haircare-compartment { width: 99vw; padding: 1.2rem 0.4rem; }
-  .main-title { font-size: 2.2rem; }
-  .haircare-title { font-size: 1.4rem; }
-}
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .haircare-compartment {
     flex-direction: column !important;
     text-align: center;
     padding: 1.3rem 0.5rem;
-    margin: 1.3rem 0;
   }
   .haircare-image { padding: 0 !important; }
-  .haircare-text { padding:
+  .haircare-text { padding: 0.5rem 0.2rem; }
+  .haircare-article { padding: 1rem 0.4rem; }
+  .main-title { font-size: 1.5rem; }
+  .haircare-title { font-size: 1.2rem; }
+}
