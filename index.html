@@ -7,20 +7,66 @@
 </head>
 <body>
   <div class="background">
-    <div class="cloud cloud1"></div>
-    <div class="cloud cloud2"></div>
     <div class="flower flower1"></div>
     <div class="flower flower2"></div>
     <div class="flower flower3"></div>
+    <div class="flower flower4"></div>
+    <div class="flower flower5"></div>
+    <div class="flower flower6"></div>
   </div>
   <header>
     <h1 class="main-title">Bienvenue dans l’univers Haircare</h1>
-    <nav>
+    <nav class="main-nav">
       <ul>
-        <li><a href="blog.html" class="headline blog">Blog</a></li>
-        <li><a href="service.html" class="headline service">Service</a></li>
-        <li><a href="news.html" class="headline news">News</a></li>
-        <li><a href="politique.html" class="headline politique">Politique</a></li>
+        <li>
+          <a href="blog.html" class="headline blog">
+            <span class="icon">
+              <!-- Rose SVG -->
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+                <circle cx="12" cy="12" r="7" fill="#e45a84"/>
+                <path d="M12 7c2 0 3 2 3 3.5S14 16 12 16s-3-2-3-3.5S10 7 12 7z" fill="#f9a8c4"/>
+              </svg>
+            </span>
+            Blog
+          </a>
+        </li>
+        <li>
+          <a href="news.html" class="headline news">
+            <span class="icon">
+              <!-- Journal SVG -->
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+                <rect x="4" y="6" width="16" height="12" rx="2" fill="#2176ae"/>
+                <rect x="7" y="9" width="10" height="2" fill="#fff"/>
+                <rect x="7" y="12" width="6" height="2" fill="#cbe7ff"/>
+              </svg>
+            </span>
+            News
+          </a>
+        </li>
+        <li>
+          <a href="service.html" class="headline service">
+            <span class="icon">
+              <!-- Coeur SVG -->
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+                <path d="M12 21s-7.5-5.2-7.5-11A5.5 5.5 0 0 1 12 5.5A5.5 5.5 0 0 1 19.5 10c0 5.8-7.5 11-7.5 11z" fill="#3ecb5b"/>
+              </svg>
+            </span>
+            Service
+          </a>
+        </li>
+        <li>
+          <a href="politique.html" class="headline politique">
+            <span class="icon">
+              <!-- Marteau SVG -->
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+                <rect x="10" y="3" width="4" height="8" rx="1" fill="#e53935"/>
+                <rect x="8" y="13" width="8" height="2" rx="1" fill="#e53935"/>
+                <rect x="11" y="15" width="2" height="6" rx="1" fill="#e45a84"/>
+              </svg>
+            </span>
+            Politique
+          </a>
+        </li>
       </ul>
     </nav>
   </header>
@@ -30,100 +76,48 @@
       <h2 class="haircare-title">🌺 Haircare — L’art du soin naturel pour cheveux bouclés</h2>
       <div class="haircare-content">
 
-        <!-- Compartiment 1 -->
-        <div class="haircare-compartment left">
-          <div class="haircare-text">
-            <p>
-              Bienvenue dans un sanctuaire dédié à la beauté libre, à la nature bienveillante et aux rituels capillaires qui célèbrent les boucles dans toute leur splendeur.
-            </p>
-          </div>
-          <div class="haircare-image">
-            <!-- Insère ton image ici -->
-            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80" alt="Boucles naturelles" class="boucle-photo">
-          </div>
-        </div>
+        <p>
+          Bienvenue dans un sanctuaire dédié à la beauté libre, à la nature bienveillante et aux rituels capillaires qui célèbrent les boucles dans toute leur splendeur.
+        </p>
 
-        <!-- Compartiment 2 -->
-        <div class="haircare-compartment right">
-          <div class="haircare-image">
-            <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=400&q=80" alt="Rituel capillaire" class="boucle-photo">
-          </div>
-          <div class="haircare-text">
-            <h3>🌿 Une approche holistique du bien-être capillaire</h3>
-            <ul>
-              <li><strong>Naturalité :</strong> des gestes simples, inspirés par la nature.</li>
-              <li><strong>Sensorialité :</strong> des rituels doux, comme des massages et des infusions capillaires.</li>
-              <li><strong>Liberté :</strong> chaque boucle est unique, et mérite d’être révélée.</li>
-            </ul>
-          </div>
-        </div>
+        <h3>🌿 Une approche holistique du bien-être capillaire</h3>
+        <ul>
+          <li><strong>Naturalité :</strong> des gestes simples, inspirés par la nature.</li>
+          <li><strong>Sensorialité :</strong> des rituels doux, comme des massages et des infusions capillaires.</li>
+          <li><strong>Liberté :</strong> chaque boucle est unique, et mérite d’être révélée.</li>
+        </ul>
 
-        <!-- Compartiment 3 -->
-        <div class="haircare-compartment left">
-          <div class="haircare-text">
-            <h3>🌸 Des rituels doux, inspirés par la nature</h3>
-            <p>Hydrater les boucles avec un spray léger, réveiller leur forme avec les doigts, créer un moment de soin chaque matin. C’est cela, le cœur de Haircare.</p>
-            <p>Nous guidons chaque personne vers une routine adaptée, accessible et sensorielle.</p>
-          </div>
-          <div class="haircare-image">
-            <img src="https://images.unsplash.com/photo-1465101162946-4377e57745c3?auto=format&fit=crop&w=400&q=80" alt="Soin printanier" class="boucle-photo">
-          </div>
-        </div>
+        <h3>🌸 Des rituels doux, inspirés par la nature</h3>
+        <p>Hydrater les boucles avec un spray léger, réveiller leur forme avec les doigts, créer un moment de soin chaque matin. C’est cela, le cœur de Haircare.</p>
+        <p>Nous guidons chaque personne vers une routine adaptée, accessible et sensorielle.</p>
 
-        <!-- Compartiment 4 -->
-        <div class="haircare-compartment right">
-          <div class="haircare-image">
-            <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80" alt="Détox et gommage" class="boucle-photo">
-          </div>
-          <div class="haircare-text">
-            <h3>🌬️ Détox et gommage capillaire</h3>
-            <p>Un gommage doux du cuir chevelu permet de purifier, stimuler et apaiser. Une détox mensuelle libère les boucles des impuretés et leur redonne légèreté.</p>
-          </div>
-        </div>
+        <h3>🌬️ Détox et gommage capillaire</h3>
+        <p>Un gommage doux du cuir chevelu permet de purifier, stimuler et apaiser. Une détox mensuelle libère les boucles des impuretés et leur redonne légèreté.</p>
 
-        <!-- Compartiment 5 -->
-        <div class="haircare-compartment left">
-          <div class="haircare-text">
-            <h3>🪷 Dressage et réparation</h3>
-            <p>Quand les boucles sont abîmées, le dressage devient un soin réparateur. On restructure, on protège, on réhydrate avec patience et bienveillance.</p>
-          </div>
-          <div class="haircare-image">
-            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Soin réparateur" class="boucle-photo">
-          </div>
-        </div>
+        <h3>🪷 Dressage et réparation</h3>
+        <p>Quand les boucles sont abîmées, le dressage devient un soin réparateur. On restructure, on protège, on réhydrate avec patience et bienveillance.</p>
 
-        <!-- Compartiment 6 -->
-        <div class="haircare-compartment right">
-          <div class="haircare-image">
-            <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Boucles et bien-être" class="boucle-photo">
-          </div>
-          <div class="haircare-text">
-            <h3>💫 Reconnecter avec soi, une boucle à la fois</h3>
-            <p>Les cheveux reflètent notre état intérieur. Haircare t’invite à ralentir, à écouter, à créer un espace de bien-être où tes boucles deviennent les messagères de ton équilibre.</p>
-          </div>
-        </div>
+        <h3>💫 Reconnecter avec soi, une boucle à la fois</h3>
+        <p>Les cheveux reflètent notre état intérieur. Haircare t’invite à ralentir, à écouter, à créer un espace de bien-être où tes boucles deviennent les messagères de ton équilibre.</p>
 
-        <!-- Compartiment 7 -->
-        <div class="haircare-compartment left">
-          <div class="haircare-text">
-            <h3>🧡 Rejoins la communauté Haircare</h3>
-            <ul>
-              <li>Des rituels inspirants</li>
-              <li>Des recettes naturelles</li>
-              <li>Des portraits de femmes et hommes bouclés</li>
-              <li>Des offres exclusives et des événements locaux</li>
-            </ul>
-            <h3>✨ En résumé…</h3>
-            <p>Haircare, c’est une ode à la beauté sauvage, à la simplicité végétale, et à la joie de prendre soin. <br><strong>Bienvenue chez toi.</strong></p>
-          </div>
-          <div class="haircare-image">
-            <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Boucles heureuses" class="boucle-photo">
-          </div>
-        </div>
+        <h3>🧡 Rejoins la communauté Haircare</h3>
+        <ul>
+          <li>Des rituels inspirants</li>
+          <li>Des recettes naturelles</li>
+          <li>Des portraits de femmes et hommes bouclés</li>
+          <li>Des offres exclusives et des événements locaux</li>
+        </ul>
+        <h3>✨ En résumé…</h3>
+        <p>Haircare, c’est une ode à la beauté sauvage, à la simplicité végétale, et à la joie de prendre soin. <br><strong>Bienvenue chez toi.</strong></p>
+      </div>
+      <div class="photo-section">
+        <h3>📸 Insérer votre photo ici :</h3>
+        <!-- Pour insérer une image, ajoute simplement ci-dessous :
+        <img src="URL-de-ton-image.jpg" alt="Ma photo" class="haircare-photo-user">
+        -->
       </div>
     </section>
   </main>
-
   <footer>
     <p>&copy; 2025 Haircare • Créé avec amour par Princia</p>
   </footer>
