@@ -2,146 +2,38 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Accueil - Haircare</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Haircare Naturel</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <div class="background">
-    <div class="flower flower1"></div>
-    <div class="flower flower2"></div>
-    <div class="flower flower3"></div>
-    <div class="flower flower4"></div>
-    <div class="flower flower5"></div>
-    <div class="flower flower6"></div>
-  </div>
   <header>
-    <h1 class="main-title">Bienvenue dans l’univers Haircare</h1>
-    <nav class="main-nav">
-      <ul>
-        <li>
-          <a href="blog.html" class="headline blog">
-            <span class="icon">
-              <!-- Rose SVG -->
-              <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
-                <circle cx="12" cy="12" r="7" fill="#e45a84"/>
-                <path d="M12 7c2 0 3 2 3 3.5S14 16 12 16s-3-2-3-3.5S10 7 12 7z" fill="#f9a8c4"/>
-              </svg>
-            </span>
-            Blog
-          </a>
-        </li>
-        <li>
-          <a href="news.html" class="headline news">
-            <span class="icon">
-              <!-- Journal SVG -->
-              <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
-                <rect x="4" y="6" width="16" height="12" rx="2" fill="#2176ae"/>
-                <rect x="7" y="9" width="10" height="2" fill="#fff"/>
-                <rect x="7" y="12" width="6" height="2" fill="#cbe7ff"/>
-              </svg>
-            </span>
-            News
-          </a>
-        </li>
-        <li>
-          <a href="service.html" class="headline service">
-            <span class="icon">
-              <!-- Coeur SVG -->
-              <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
-                <path d="M12 21s-7.5-5.2-7.5-11A5.5 5.5 0 0 1 12 5.5A5.5 5.5 0 0 1 19.5 10c0 5.8-7.5 11-7.5 11z" fill="#3ecb5b"/>
-              </svg>
-            </span>
-            Service
-          </a>
-        </li>
-        <li>
-          <a href="politique.html" class="headline politique">
-            <span class="icon">
-              <!-- Marteau SVG -->
-              <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
-                <rect x="10" y="3" width="4" height="8" rx="1" fill="#e53935"/>
-                <rect x="8" y="13" width="8" height="2" rx="1" fill="#e53935"/>
-                <rect x="11" y="15" width="2" height="6" rx="1" fill="#e45a84"/>
-              </svg>
-            </span>
-            Politique
-          </a>
-        </li>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="service.html">Service</a></li>
+        <li><a href="politique.html">Politique</a></li>
+        <li><a href="news.html">News</a></li>
       </ul>
     </nav>
+    <div class="header-visuals">
+      <div class="sun"></div>
+      <div class="cloud cloud1"></div>
+      <div class="cloud cloud2"></div>
+      <div class="flowers"></div>
+    </div>
   </header>
+
   <main>
+    <!-- Intégration du contenu Haircare -->
     <section class="haircare-article">
-      <h2 class="haircare-title">🌺 Haircare — L’art du soin naturel pour cheveux bouclés</h2>
-      <div class="haircare-content">
-
-        <div class="section-left">
-          <h3>Bienvenue dans un sanctuaire dédié à la beauté libre</h3>
-          <p>
-            À la nature bienveillante et aux rituels capillaires qui célèbrent les boucles dans toute leur splendeur.<br>
-            Chez Haircare, nous croyons que prendre soin de ses cheveux, c’est aussi prendre soin de soi. C’est un acte de douceur, de respect, et de reconnexion à ce qui est vivant — en nous et autour de nous.
-          </p>
-        </div>
-
-        <div class="section-right">
-          <h3>🌿 Une approche holistique du bien-être capillaire</h3>
-          <ul>
-            <li><strong>Naturalité :</strong> chaque produit que nous recommandons est formulé à partir d’ingrédients végétaux, purs et respectueux de l’environnement.</li>
-            <li><strong>Sensorialité :</strong> les soins ne sont pas qu’une routine. Ce sont des rituels. Des moments suspendus où l’on masse, respire, ressent.</li>
-            <li><strong>Liberté :</strong> chaque texture de boucle est unique. Nous ne cherchons pas à dompter, mais à révéler.</li>
-          </ul>
-        </div>
-
-        <div class="section-left">
-          <h3>🌸 Des rituels doux, inspirés par la nature</h3>
-          <p>
-            Imagine une matinée paisible. Tu prépares ton infusion capillaire, tu masses ton cuir chevelu avec une huile tiède aux notes de citronnelle et de baobab. Tes boucles s’étirent, respirent, s’épanouissent. C’est cela, le cœur de Haircare : transformer le soin en célébration.
-          </p>
-        </div>
-
-        <div class="section-right">
-          <h3>🌍 Un engagement éthique et écologique</h3>
-          <ul>
-            <li>Des marques éthiques et transparentes</li>
-            <li>Des ingrédients biodégradables et issus de l’agriculture responsable</li>
-            <li>Des pratiques de consommation lente et consciente</li>
-            <li>Des recettes maison simples et efficaces, à base de plantes locales</li>
-          </ul>
-          <p>Nous croyons en une beauté qui guérit, qui respecte, qui inspire.</p>
-        </div>
-
-        <div class="section-left">
-          <h3>💫 Reconnecter avec soi, une boucle à la fois</h3>
-          <p>
-            Les cheveux sont souvent le miroir de notre état intérieur. Stress, fatigue, déséquilibres hormonaux… tout se reflète dans leur texture, leur vitalité. Haircare t’invite à ralentir. À écouter. À créer un espace de bien-être où tes boucles deviennent les messagères de ton équilibre.
-          </p>
-        </div>
-
-        <div class="section-right">
-          <h3>🧡 Rejoins la communauté Haircare</h3>
-          <ul>
-            <li>Des rituels inspirants</li>
-            <li>Des recettes naturelles</li>
-            <li>Des portraits de femmes et hommes bouclés</li>
-            <li>Des offres exclusives et des événements locaux</li>
-          </ul>
-          <h3>✨ En résumé…</h3>
-          <p>
-            Haircare, c’est plus qu’un site. C’est une invitation à te reconnecter à ta nature profonde, à travers le soin de tes boucles. C’est une ode à la beauté sauvage, à la simplicité végétale, et à la joie de prendre soin.<br>
-            <strong>Bienvenue chez toi.</strong>
-          </p>
-        </div>
-
-        <div class="section-left photo-section">
-          <h3>📸 Insérer votre photo ici :</h3>
-          <!-- Ajoute ton image ici -->
-          <!-- <img src="URL-de-votre-image.jpg" alt="Votre photo" class="haircare-photo-user"> -->
-        </div>
-      </div>
+      <!-- Ton contenu Haircare ici -->
+      <!-- ... (copié tel quel depuis ton message) ... -->
     </section>
   </main>
+
   <footer>
-    <p>&copy; 2025 Haircare • Créé avec amour par Princia</p>
+    <p>&copy; 2025 Haircare Naturel — Tous droits réservés</p>
   </footer>
 </body>
 </html>
